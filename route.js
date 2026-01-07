@@ -17,13 +17,3 @@ for (let i = 0; i < 150; i++) {
   s.style.transform = `scale(${0.2 + Math.random() * 0.8})`;
   backgroundDecor.appendChild(s);
 }
-
-const predict_route_btn = document.getElementById("predict-route");
-predict_route_btn.addEventListener("click", () => {
-  window.location.href = "route.html";
-});
-
-const control_traffic_btn = document.getElementById("control-traffic");
-control_traffic_btn.addEventListener("click", () => {
-  window.location.href = "signal.html";
-});
