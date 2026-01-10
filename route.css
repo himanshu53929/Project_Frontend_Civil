@@ -140,13 +140,14 @@ section h2 {
 
 #input-divison {
     display: flex;
-    gap: 650px
+    gap: 290px
 }
 
 #input-individual {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
 }
 
 input {
@@ -186,4 +187,21 @@ input:focus {
 
 .light.green {
     background-color: #27c93f;
+}
+
+#path_button {
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
+    transition: all 0.25s ease;
 }
