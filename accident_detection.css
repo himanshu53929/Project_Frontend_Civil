@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0a0a, #111111);
+    color: #f3f4f6;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+/* .route-wrapper {
+    position: relative;
+    z-index: 1;
+} */
+
+.accident-header {
+    position: relative;
+    background-color: #111111;
+    color: #22c55e;
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 1px solid #222222;
+}
+
+
+#video{
+    position: fixed;
+    top: 200px;
+    left: 370px;
+    height: 400px;
+}
+
+.decorative-shapes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.small-shape {
+    position: absolute;
+    animation: float-slow 20s infinite linear;
+}
+
+.small-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #3b82f6;
+}
+
+.small-square {
+    width: 10px;
+    height: 10px;
+    background: #facc15;
+}
+
+.small-triangle {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #ef4444;
+}
+
+@keyframes float-slow {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(20deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+    background: #111111;
+    border-top: 1px solid #222222;
+}
+
+#magic-button {
+    left: 350px;
+}
+
+#magic-button {
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4);
+    transition: all 0.25s ease;
+}
+
+#magic-button:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(239, 68, 68, 0.6);
+}
+
+#magic-button:active {
+    transform: scale(0.95);
+}

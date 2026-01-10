@@ -18,17 +18,20 @@ for (let i = 0; i < 150; i++) {
   backgroundDecor.appendChild(s);
 }
 
-const predict_route_btn = document.getElementById("predict-route");
-predict_route_btn.addEventListener("click", () => {
-  window.location.href = "route.html";
+// Assume data represent the value of accident an is true if there is an accident
+const magic_button = document.createElement("button");
+magic_button.textContent = "Make Accident";
+magic_button.style.position = "relative";
+magic_button.style.zIndex = "10";
+magic_button.id = "magic-button";
+data = false;
+magic_button.addEventListener("click", () => {
+  data = true;
+  alert("Accident detected!!!, calling to 100.");
 });
 
-const control_traffic_btn = document.getElementById("control-traffic");
-control_traffic_btn.addEventListener("click", () => {
-  window.location.href = "signal.html";
-});
+document.querySelector("main").appendChild(magic_button);
 
-const accident_detection_btn = document.getElementById("accident-detection");
-accident_detection_btn.addEventListener("click", () => {
-  window.location.href = "accident_detection.html";
-});
+// if (data) {
+//   console.log("Accident detected!!!, calling to 100.");
+// }
